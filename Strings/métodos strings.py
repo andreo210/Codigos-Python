@@ -29,7 +29,8 @@ print(a.strip())  # returns "Hello, World!"
 a = "Hello, World!"
 print(a.replace("H", "J"))
 
-# split()método divide a string em substrings se encontrar instâncias do separador:
+# split()método divide a string em substrings se encontrar
+#  instâncias do separador:
 a = "Hello, World!"
 print(a.split(","))  # returns ['Hello', ' World!']
 
@@ -47,10 +48,12 @@ count()	Returns the number of times a specified value occurs in a string
 encode()	Returns an encoded version of the string
 endswith()	Returns true if the string ends with the specified value
 expandtabs()	Sets the tab size of the string
-find()	Searches the string for a specified value and returns the position of where it was found
+find()	Searches the string for a specified value and returns the position of
+ where it was found.
 format()	Formats specified values in a string
 format_map()	Formats specified values in a string
-index()	Searches the string for a specified value and returns the position of where it was found
+index()	Searches the string for a specified value and returns the position of
+ where it was found.
 isalnum()	Returns True if all characters in the string are alphanumeric
 isalpha()	Returns True if all characters in the string are in the alphabet
 isascii()	Returns True if all characters in the string are ascii characters
@@ -69,9 +72,12 @@ lower()	Converts a string into lower case
 lstrip()	Returns a left trim version of the string
 maketrans()	Returns a translation table to be used in translations
 partition()	Returns a tuple where the string is parted into three parts
-replace()	Returns a string where a specified value is replaced with a specified value
-rfind()	Searches the string for a specified value and returns the last position of where it was found
-rindex()	Searches the string for a specified value and returns the last position of where it was found
+replace()	Returns a string where a specified value is replaced with a
+ specified value.
+rfind()	Searches the string for a specified value and returns the last 
+position of where it was found.
+rindex()	Searches the string for a specified value and returns the last
+position of where it was found.
 rjust()	Returns a right justified version of the string
 rpartition()	Returns a tuple where the string is parted into three parts
 rsplit()	Splits the string at the specified separator, and returns a list
