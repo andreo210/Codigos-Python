@@ -1,7 +1,10 @@
 """
 Variáveis ​​globais
-Variáveis ​​que são criadas fora de uma função são conhecidas como variáveis ​​globais.
-Variáveis ​​globais podem ser usadas por qualquer pessoa, tanto dentro quanto fora das funções.
+Variáveis ​​que são criadas fora de uma função
+ são conhecidas como variáveis ​​globais.
+
+Variáveis ​​globais podem ser usadas por 
+qualquer pessoa, tanto dentro quanto fora das funções.
 """
 
 x = "awesome"
