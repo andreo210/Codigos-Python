@@ -33,6 +33,7 @@ classificar a lista (o menor número primeiro):
 """
 
 # Classifique a lista com base na proximidade do número de 50
+
 def myfunc(n):
     return abs(n - 50)
 thislist = [100, 50, 65, 82, 23]
