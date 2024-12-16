@@ -14,9 +14,12 @@ def myfunc():
 myfunc()
 
 """A palavra-chave global
-Normalmente, quando você cria uma variável dentro de uma função, essa variável é local e só pode ser usada dentro dessa função.
-Para criar uma variável global dentro de uma função, você pode usar a globalpalavra-chave.
+Normalmente, quando você cria uma variável dentro de uma função,
+ essa variável é local e só pode ser usada dentro dessa função.
+Para criar uma variável global dentro de uma função, 
+você pode usar a global palavra-chave.
 """
+
 def myfunc():
   global x
   x = "fantastic"
