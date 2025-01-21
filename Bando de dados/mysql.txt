@@ -1,0 +1,16 @@
+Python pode ser usado em aplicações de banco de dados.
+Um dos bancos de dados mais populares é o MySQL.
+
+Banco de dados MySQL
+Para poder experimentar os exemplos de código neste tutorial, você deve ter o MySQL instalado no seu computador.
+Você pode baixar um banco de dados MySQL em https://www.mysql.com/downloads/ .
+
+Instalar driver MySQL
+O Python precisa de um driver MySQL para acessar o banco de dados MySQL.
+Neste tutorial usaremos o driver "MySQL Connector".
+Recomendamos que você use o PIP para instalar o "MySQL Connector".
+O PIP provavelmente já está instalado no seu ambiente Python.
+Navegue na linha de comando até o local do PIP e digite o seguinte:
+
+Baixe e instale o "MySQL Connector":
+C:\Users\Your Name\AppData\Local\Programs\Python\Python36-32\Scripts>python -m pip install mysql-connector-pyt
