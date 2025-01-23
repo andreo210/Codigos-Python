@@ -12,7 +12,6 @@ Criar conexão
 Comece criando uma conexão com o banco de dados.
 
 Use o nome de usuário e a senha do seu banco de dados MySQL:
-
 """
 import mysql.connector
 
@@ -21,5 +20,4 @@ mydb = mysql.connector.connect(
   user="root",
   password="123456"
 )
-
 print(mydb)
