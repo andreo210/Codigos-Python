@@ -1,0 +1,32 @@
+O que é Matplotlib?
+Matplotlib é uma biblioteca de plotagem de gráficos de baixo nível em Python que serve como um utilitário de visualização.
+Matplotlib foi criado por John D. Hunter.
+O Matplotlib é de código aberto e podemos usá-lo livremente.
+O Matplotlib é escrito principalmente em Python, alguns segmentos são escritos em C, Objective-C e Javascript para compatibilidade com a plataforma.
+
+
+
+Onde está o código base do Matplotlib?
+O código-fonte do Matplotlib está localizado neste repositório do github https://github.com/matplotlib/matplotlib
+
+
+
+Instalação do Matplotlib
+Se você já tiver Python e PIP instalados em um sistema, a instalação do Matplotlib será muito fácil.
+Instale-o usando este comando:
+C:\Users\Your Name>pip install matplotlib
+
+
+
+Importar Matplotlib
+Depois que o Matplotlib estiver instalado, importe-o em seus aplicativos adicionando a instrução:import module
+import matplotlib
+
+
+
+Verificando a versão do Matplotlib
+A string da versão é armazenada no __version__ atributo.
+
+import matplotlib
+
+print(matplotlib.__version__)
