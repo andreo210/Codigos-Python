@@ -12,8 +12,6 @@ print(arr.shape)
 
 # Crie uma matriz com 5 dimensões usando ndminum vetor com valores 1,2,3,4 e verifique se a última dimensão tem valor 4:
 import numpy as np
-
 arr = np.array([1, 2, 3, 4], ndmin=5)
-
 print(arr)
 print('shape of array :', arr.shape)
