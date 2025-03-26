@@ -10,7 +10,6 @@ print(matplotlib.__version__)
 
 
 
-
 """
 Pyplot
 A maioria dos utilitários do Matplotlib fica no pyplot e geralmente são importados sob o plt alias:
