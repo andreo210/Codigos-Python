@@ -67,7 +67,7 @@ print(arr)
 
 """
 Verificar número de dimensões?
-O NumPy Arrays fornece o ndimatributo que retorna um inteiro que nos diz quantas dimensões o array tem.
+O NumPy Arrays fornece o ndim atributo que retorna um inteiro que nos diz quantas dimensões o array tem.
 """
 import numpy as np
 
