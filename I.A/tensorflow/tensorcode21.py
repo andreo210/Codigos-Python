@@ -1,14 +1,14 @@
 # -*- coding: iso-8859-15 -*-
 
-# Classificação de imagens com KNN
-# O K-vizinho mais próximo (KNN - K-Nearest Neighbor) é um algoritmo de aprendizagem supervisionado tanto para a classificação como para a regressão. 
-# É um sistema que atribui a classe da amostra testada de acordo com sua distância dos objetos armazenados na memória. A distância, d, é definida 
-# como a distância euclidiana entre dois pontos.
+# Classificaï¿œï¿œo de imagens com KNN
+# O K-vizinho mais prï¿œximo (KNN - K-Nearest Neighbor) ï¿œ um algoritmo de aprendizagem supervisionado tanto para a classificaï¿œï¿œo como para a regressï¿œo. 
+# ï¿œ um sistema que atribui a classe da amostra testada de acordo com sua distï¿œncia dos objetos armazenados na memï¿œria. A distï¿œncia, d, ï¿œ definida 
+# como a distï¿œncia euclidiana entre dois pontos.
 
-# A vantagem deste método de classificação é a capacidade de classificar objetos cujas classes não são linearmente separáveis. 
-# É um classificador estável, dado que pequenas perturbações (ruídos) dos dados de treinamento não afetam significativamente os resultados obtidos. 
-# A desvantagem mais óbvia, no entanto, é que ele não fornece um verdadeiro modelo matemático. Em vez disso, para cada nova classificação, devem ser 
-# adicionados novos dados a todas as instâncias iniciais e repetindo o procedimento de cálculo para o valor K selecionado. 
+# A vantagem deste mï¿œtodo de classificaï¿œï¿œo ï¿œ a capacidade de classificar objetos cujas classes nï¿œo sï¿œo linearmente separï¿œveis. 
+# ï¿œ um classificador estï¿œvel, dado que pequenas perturbaï¿œï¿œes (ruï¿œdos) dos dados de treinamento nï¿œo afetam significativamente os resultados obtidos. 
+# A desvantagem mais ï¿œbvia, no entanto, ï¿œ que ele nï¿œo fornece um verdadeiro modelo matemï¿œtico. Em vez disso, para cada nova classificaï¿œï¿œo, devem ser 
+# adicionados novos dados a todas as instï¿œncias iniciais e repetindo o procedimento de cï¿œlculo para o valor K selecionado. 
 
 import numpy as np
 import tensorflow as tf
@@ -27,12 +27,12 @@ test_pixels, test_list_of_values  = mnist.test.next_batch(10)
 train_pixel_tensor = tf.placeholder("float", [None, 784])
 test_pixel_tensor = tf.placeholder("float", [784])
 
-# Cost Function e Otimização de Distância
-# A função de custo é representada pela distância em termos de pixels.
-# A soma da função tf.reduce_sum calcula a soma dos elementos através das dimensões de um tensor.
+# Cost Function e Otimizaï¿œï¿œo de Distï¿œncia
+# A funï¿œï¿œo de custo ï¿œ representada pela distï¿œncia em termos de pixels.
+# A soma da funï¿œï¿œo tf.reduce_sum calcula a soma dos elementos atravï¿œs das dimensï¿œes de um tensor.
 distance = tf.reduce_sum(tf.abs(tf.add(train_pixel_tensor, tf.negative(test_pixel_tensor))), reduction_indices = 1)
 
-# Finalmente, para minimizar a função de distância, usamos arg_min, que retorna o índice com a menor distância (vizinho mais próximo - KNN - K-Nearest Neighbor):
+# Finalmente, para minimizar a funï¿œï¿œo de distï¿œncia, usamos arg_min, que retorna o ï¿œndice com a menor distï¿œncia (vizinho mais prï¿œximo - KNN - K-Nearest Neighbor):
 pred = tf.arg_min(distance, 0)
 
 # Testando e Avaliando o Algoritmo
@@ -42,7 +42,7 @@ with tf.Session() as sess:
     sess.run(init)
     for i in range(len(test_list_of_values)):
         nn_index = sess.run(pred, feed_dict = {train_pixel_tensor:train_pixels, test_pixel_tensor:test_pixels[i,:]})
-        print ("Teste N° ", i,"Classe Prevista: ", np.argmax(train_list_values[nn_index]), "Classe Observada (Verdadeira): ", np.argmax(test_list_of_values[i]))
+        print ("Teste Nï¿œ ", i,"Classe Prevista: ", np.argmax(train_list_values[nn_index]), "Classe Observada (Verdadeira): ", np.argmax(test_list_of_values[i]))
         if np.argmax(train_list_values[nn_index]) == np.argmax(test_list_of_values[i]):
             accuracy += 1./len(test_pixels)
     print ("Resultado = ", accuracy)
