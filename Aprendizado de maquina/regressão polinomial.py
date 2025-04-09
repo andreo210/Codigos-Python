@@ -111,7 +111,6 @@ plt.plot(myline, mymodel(myline))
 plt.show()
 
 
-
 """E o valor de r-quadrado?"""
 # Você deve obter um valor de r-quadrado muito baixo.
 import numpy
