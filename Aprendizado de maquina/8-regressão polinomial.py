@@ -34,6 +34,14 @@ plt.show()
 
 
 
+predictedCO2 = regr.predict([scaled[0]])
+print(predictedCO2)
+
+
+
+
+
+
 
 
 

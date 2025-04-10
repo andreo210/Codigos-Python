@@ -62,7 +62,7 @@ E se aumentarmos o peso em 1000 kg?
 import pandas
 from sklearn import linear_model
 
-df = pandas.read_csv("data.csv")
+df = pandas.read_csv("C:\\Users\\andreoa\\Documents\\Codigos-Python\\Aprendizado de maquina\\data.csv")
 
 X = df[['Weight', 'Volume']]
 y = df['CO2']
