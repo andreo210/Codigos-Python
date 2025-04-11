@@ -10,7 +10,7 @@ Qual é o 75º percentil? A resposta é 43, o que significa que 75% das pessoas 
 O módulo NumPy tem um método para encontrar o percentil especificado:
 """
 
-# Use o método NumPy percentile()para encontrar os percentis:
+# Use o método NumPy percentile() para encontrar os percentis:
 import numpy
 ages = [5,31,43,48,50,41,7,11,15,39,80,82,32,2,8,6,25,36,27,61,31]
 x = numpy.percentile(ages, 75)
