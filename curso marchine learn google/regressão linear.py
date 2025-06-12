@@ -46,6 +46,9 @@ training_df.head(200)
 
 
 
+
+"""----------------------------------------------------------------------------------Part 2 - Dataset Exploration----------------------------------------------------------"""
+
 ##############################@title-5 Code - Ver estatísticas do conjunto de dados
 print('Total number of rows: {0}\n\n'.format(len(training_df.index)))
 training_df.describe(include='all')
@@ -118,7 +121,7 @@ print(answer)
 sns.pairplot(training_df, x_vars=["FARE", "TRIP_MILES", "TRIP_SECONDS"], y_vars=["FARE", "TRIP_MILES", "TRIP_SECONDS"])
 
 
-
+"""-----------------------------------------------------------------------------------------Part 3 - Train Model-----------------------------------------------------"""
 ###########################################@title-8 Definir funções de plotagem aqui 
 
 def make_plots(df, feature_names, label_name, model_output, sample_size=200):
