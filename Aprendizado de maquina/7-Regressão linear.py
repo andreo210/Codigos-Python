@@ -48,7 +48,8 @@ plt.show()
 
 """
 R para Relacionamento
-É importante saber qual é a relação entre os valores do eixo x e os valores do eixo y. Se não houver relação, a regressão linear não poderá ser usada para prever nada.
+É importante saber qual é a relação entre os valores do eixo x e os valores do eixo y. Se não houver relação,
+a regressão linear não poderá ser usada para prever nada.
 
 Essa relação - o coeficiente de correlação - é chamada r.
 O r valor varia de -1 a 1, onde 0 significa nenhuma relação e 1 (e -1) significa 100% relacionado.
@@ -82,7 +83,7 @@ slope, intercept, r, p, std_err = stats.linregress(x, y)
 def myfunc(x):
   return slope * x + intercept
 
-speed = myfunc(15)
+speed = myfunc(10)
 
 print(speed)
 """O exemplo previu uma velocidade de 85,6, que também podemos ler no diagrama:"""
