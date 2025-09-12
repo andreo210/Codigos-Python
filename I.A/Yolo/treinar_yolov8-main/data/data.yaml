@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['cable tower', 'turbine']
+
+roboflow:
+  workspace: kyle-graupe-jobhn
+  project: wind-farms
+  version: 5
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/kyle-graupe-jobhn/wind-farms/dataset/5
