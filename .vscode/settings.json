@@ -1,5 +1,10 @@
 {
     "cSpell.words": [
         "myfunc"
+    ],
+    "python.analysis.extraPaths": [
+        "./I.A/Visao/face.net SVM",
+        "./I.A/Visao/face.net SVM/utils",
+        "./I.A/Visao/face.net SVM/train"
     ]
 }
